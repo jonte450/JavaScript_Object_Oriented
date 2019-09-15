@@ -1,0 +1,21 @@
+QUESTION 1 OF 2
+
+What is true about immediately-invoked function expressions? Select all that apply:
+
+Answers:
+IIFE's can be used to create private scope.
+IIFE's are very closely associated with scope and closures.
+There is an alternative syntax for writing an IIFE.
+
+QUESTION 2 OF 2
+
+The following immediately-invoked function expression is run in the browser:
+
+(function(n){
+  delete n;
+  return n;
+})(2);
+
+Answers:
+2
+

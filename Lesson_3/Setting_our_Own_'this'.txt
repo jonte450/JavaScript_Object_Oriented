@@ -1,0 +1,90 @@
+QUESTION 1 OF 5
+
+Consider the following dave object, and the sayHello() function:
+
+const dave = {
+  name: 'Dave'
+};
+
+function sayHello(message) {
+  console.log(`${message}, ${this.name}. You're looking well today.`);
+}
+
+Let's say you want the message 'Hello, Dave. You're looking well today.' printed to the console.
+
+Which of the following expressions could you write to accomplish that?
+
+Answers:
+sayHello.apply(dave, ['Hello']);
+
+QUESTION 2 OF 5
+
+Consider the following Andrew and Richard objects:
+
+const Andrew = {
+  name: 'Andrew',
+  introduce: function () {
+    console.log(`Hi, my name is ${this.name}!`);
+  }
+};
+
+const Richard = {
+  name: 'Richard',
+  introduce: function () {
+    console.log(`Hello there! I'm ${this.name}.`);
+  }
+};
+
+When Richard.introduce.call(Andrew); is executed, what is logged to the console?
+
+Answers:
+'Hello there! I'm Andrew.'
+
+QUESTION 3 OF 5
+
+Consider the following:
+
+const andrew = {
+  name: 'Andrew'
+};
+
+function introduce(language) {
+  console.log(`I'm ${this.name} and my favorite programming language is ${language}.`);
+}
+
+Write an expression that uses the call() method to produce the message: 'I'm Andrew and my favorite programming language is JavaScript.'
+
+Answers:
+introduce.call(andrew,'JavaScript');
+
+QUESTION 4 OF 5
+
+What is true about bind()? Select all that apply:
+
+Answers:
+bind() is a method that is called on a function.
+bind() returns a new function that, when called, has this set to the provided object.
+
+QUESTION 5 OF 5
+
+Consider the following:
+
+const driver = {
+  name: 'Danica',
+  displayName: function () {
+    console.log(`Name: ${this.name}`);
+  }
+};
+
+const car = {
+  name: 'Fusion'
+};
+Write an expression using bind() that allows us to "borrow" the displayName() method from driver for the car object to use. Note: The expression itself is sufficient (no need to save it to a variable).
+
+Answers:
+const displayName = driver.displayName.bind(car);
+displayName();
+
+
+
+

@@ -1,0 +1,58 @@
+QUESTION 1 OF 3
+
+What is true about closures? Select all that apply
+
+Answers:
+A function maintains a reference to its parent's scope.
+If the reference to a parent function is still accessible, the scope persists.
+
+QUESTION 2 OF 3
+
+What is the output when result(10); is executed?
+
+function outerFunction() {
+  let num1 = 5;
+
+  return function(num2) {
+    console.log(num1 + num2);
+  };
+}
+
+let result = outerFunction();
+
+result(10);
+// ???
+
+Answers:
+15
+
+QUESTION 3 OF 3
+/*
+
+Declare a function named `expandArray()` that:
+
+* Takes no arguments
+* Contains a single local variable, `myArray`, which points to [1, 1, 1]
+* Returns an anonymous function that directly modifies `myArray` by
+  appending another `1` into it
+* The returned function then returns the value of `myArray`
+
+*/
+
+function expandArray(){
+    const myArray = [1,1,1];
+    return function modifies(){
+        myArray.push(1);
+        return myArray;
+    };
+}
+
+let check = expandArray();
+console.log(check());
+console.log(check());
+console.log(check());
+console.log(check());
+
+
+
+

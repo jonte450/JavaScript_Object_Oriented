@@ -1,0 +1,71 @@
+QUESTION 1 OF 4
+Consider the following:
+
+function GuineaPig (name) {
+  this.name = name;
+  this.isCute = true;
+}
+
+const waffle = new GuineaPig('Waffle');
+What does waffle.__proto__ refer to?
+
+Answers:
+GuineaPig.prototype
+
+QUESTION 2 OF 4
+
+Consider the following:
+
+function Car (color, year) {
+  this.color = color;
+  this.year = year;
+}
+
+Car.prototype.drive = function () {
+  console.log('Vroom vroom!');
+};
+
+const car = new Car('silver', 1988);
+What happens when car.drive(); is executed? List the following events in the order that they occur:
+Answers:
+1.First, the JavaScript engine serches inside the car object for a property named drive.
+2.The JavaScript engine does not find drive within the car object.
+3.The JavaScript engine then accesses the car.__proto__ property.
+4.Since the car.__proto__ property points to Car.prototype, the JavaScript engine searches for drive in the prototype.
+5.Because Car.prototyoe.drive _is_a defined property, it is returned.
+6Finally, since drive is invoked as a method on car, the value of this is set to car.
+
+QUESTION 3 OF 4
+
+Consider the following:
+
+function Parent() {
+  // ...
+}
+
+function Child() {
+  // ...
+}
+
+Child.prototype = Object.create(Parent.prototype);
+
+const child = new Child();
+The following is then executed:
+
+child instanceof Parent;
+
+What is printed to the console?
+
+Answers:
+true
+
+QUESTION 4 OF 4
+
+What is true about Object.create()? Select all that apply:
+
+Answers:
+It returns a new object whose __proto__ property is set to the object passed into Object.create().
+
+Using Object.create(), we can have objects inherit from just about any object we want (i.e., not only the prototype).
+
+Object.create() allows us to implement prototypal inheritance without mutating the prototype.

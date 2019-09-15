@@ -1,0 +1,79 @@
+QUESTION 1 OF 6
+What is true about modifying objects? Select all that apply:
+
+Answers:
+Removing properties with the delete operator returns true upon successful deletion.
+
+With a few exceptions, properties in objects are mutable.
+
+Consider the following house object:
+
+let house = {
+  color: 'green',
+  numRooms: 4,
+  numWindows: 8,
+  forSale: false
+};
+Write an expression to delete the numWindows property from house.
+Answer:
+delete house.numWindows;
+
+
+Consider the updated house object from above:
+
+let house = {
+  color: 'green',
+  numRooms: 4,
+  forSale: false
+};
+Write an expression to add a new hasGarage property to house. Set the value of the hasGarage property to true.
+
+house.hasGarage = true;
+
+
+Which of the following is immutable? Select all that apply:
+
+Anwers:
+
+8
+
+'How are you today?'
+
+3.14
+
+true
+
+
+Consider the following:
+
+let string = 'orange';
+
+function changeToApple(string) {
+  string = 'apple';
+}
+
+changeToApple(string);
+
+console.log(string);
+// ???
+What is logged to the console?
+Answer:
+Orange
+
+
+Consider the following object, oven:
+
+const oven = {
+  type: 'clay',
+  temperature: 400
+};
+What is the value of oven's temperature property after the following operations?
+
+const newOven = oven;
+
+newOven.temperature += 50;
+
+Answer:
+450.
+
+

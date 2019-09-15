@@ -1,0 +1,75 @@
+QUESTION 1 OF 4
+
+Consider the following:
+
+const num1 = 5;
+
+function functionOne() {
+  const num2 = 10;
+
+  function functionTwo(num3) {
+    const num4 = 35;
+
+    return num1 + num2 + num3 + num4;
+  }
+
+  return functionTwo(0);
+}
+
+Which variables does functionTwo() have access to? Select all that apply:
+
+Answers:
+num1, num2, num3, num4
+
+QUESTION 2 OF 4
+
+What will the console display when myFunction() is called?
+
+let n = 2;
+
+function myFunction() {
+  let n = 8;
+  console.log(n);
+}
+
+myFunction();
+// ???
+Answers:
+8
+
+QUESTION 3 OF 4
+
+When searching for variables along the scope chain, in what order will the JavaScript interpreter search?
+
+Answers:
+1.Local variables.
+2.Parent function's variables.
+3.Parent function's parent function's variables.
+4.Global variables.
+
+QUESTION 4 OF 4
+
+When the following code runs, what is the output of the first, second, and third logs to the console (respectively)?
+let n = 8;
+
+function functionOne() {
+  let n = 9;
+
+  function functionTwo() {
+    let n = 10;
+    console.log(n);  // First log
+  }
+
+  functionTwo();
+
+  console.log(n);  // Second log
+}
+
+functionOne();
+
+console.log(n);  // Third log
+
+Answers:
+10, 9, 8.
+
+

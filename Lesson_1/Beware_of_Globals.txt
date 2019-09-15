@@ -1,0 +1,58 @@
+QUESTION 1 OF 3
+
+What is this?
+Now, let's check out a different example. What do you think will be the value of this inside the following code?
+
+function whoThis () {
+  this.trickyish = true
+}
+
+whoThis();
+// (what does the above expression output?)
+Write your thoughts below.
+
+Your reflection
+true
+Things to think about
+Thank you for your thoughts!
+
+QUESTION 2 OF 3
+
+You've seen what this refers to in chameleon.lookAround(); and in whoThis(). Carefully review this code:
+
+const car = {
+  numberOfDoors: 4,
+  drive: function () {
+     console.log(`Get in one of the ${this.numberOfDoors} doors, and let's go!`);
+  }
+};
+
+const letsRoll = car.drive;
+
+letsRoll();
+
+What does you think this refers to in the code above?
+
+Answers:
+The window object
+
+QUESTION 3 OF 3
+
+Which of the following variables and functions will be available on the window object?
+var iceCreamEaten = 1;
+
+function consume (numberOfGallons) {
+  var result = iceCreamEaten + numberOfGallons;
+
+  function updateTotals (newTotal) {
+    iceCreamEaten = result;
+  }
+
+  updateTotals();
+}
+
+consume(3);
+
+Answers:iceCreamEaten
+consume
+

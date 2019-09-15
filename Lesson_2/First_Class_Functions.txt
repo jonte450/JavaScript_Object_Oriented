@@ -1,0 +1,26 @@
+QUESTION 1 OF 2
+
+How are JavaScript functions first-class functions? Select all that apply:
+
+Answers:
+A function can be returned from another function.
+A function can be stored in a variable.
+A function can be passed in as an argument into another function.
+
+QUESTION 2 OF 2
+
+/*
+
+Declare a function named `higherOrderFunction` that takes no arguments,
+and returns an anonymous function.
+
+The returned function itself takes no arguments as well, and simply
+returns the number 8.
+
+*/
+function higherOrderFunction(){
+    return function(){
+        return 8;
+    }
+         
+}

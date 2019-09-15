@@ -1,0 +1,52 @@
+QUESTION 1 OF 5
+
+Let's say that we want to define a method that can be invoked on instances (objects) of the Dalmatian constructor function (we'll be instantiating at least 101 of them!).
+
+Which of the preceding two approaches is optimal?
+
+Answers:
+(B) is optimal, because the function that bark points to does not need to be recreated each time an instance of Dalmatian is created.
+
+QUESTION 2 OF 5
+
+What is true about hasOwnProperty()? Select all that apply:
+
+Answers:
+It returns a boolean indicating whether the object has the specified property as its own property (i.e., the property isn't inherited).
+
+hasOwnProperty() is invoked as a method onto an object,
+
+QUESTION 3 OF 5
+
+What is true about isPrototypeOf() or getPrototypeOf()? Select all that apply:
+
+Answers:
+isPrototypeOf() checks whether or not an object exists in another object's prototype chain.
+isPrototypeOf() takes a single argument: an object whose prototype chain is to be searched.
+getPrototypeOf() returns the prototype of the object passed into it.
+
+QUESTION 4 OF 5
+
+What is true about constructor property? Select all that apply:
+
+Answers:
+Accessing an object's constructor property returns a reference to the constructor function that created that object (instance).
+
+Every object has a constructor property.
+
+Objects created with literal notation are constructed with the Object() constructor function.
+
+QUESTION 5 OF 5
+
+Let's say that we create the following object, capitals, using regular object literal notation:
+
+const capitals = {
+  California: 'Sacramento',
+  Washington: 'Olympia',
+  Oregon: 'Salem',
+  Texas: 'Austin'
+};
+What is returned when Object.getPrototypeOf(capitals); is executed?
+
+Answers:
+A reference to Object()'s prototype.

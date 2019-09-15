@@ -1,0 +1,55 @@
+QUESTION 1 OF 3
+
+What is true about the following? Select all that apply:
+
+const aircraft = {
+  flies: true
+};
+
+const helicopter = Object.create(aircraft);
+
+console.log(helicopter.flies);
+// true
+
+Answers:
+The helicopter object has no properties of its own.
+
+helicopter is prototype-linked to aircraft.
+
+QUESTION 2 OF 3
+Let's modify the above code a bit. What is true after the following?
+
+const duck = {
+  hasBill: true
+};
+const beaver = {
+  hasTail: true
+};
+const otter = {
+  hasFur: true,
+  feet: 'webbed'
+};
+
+const platypus = Object.assign(duck, beaver, otter);
+Select all that apply:
+
+Answers:
+platypus is an object with four properties.
+duck becomes an object with four properties.
+platypus === duck.
+
+QUESTION 3 OF 3
+
+What is true about multiple inheritance or mixins? Select all that apply:
+
+Answers:
+A mixin supplies properties and/or methods that can be shared.
+
+We can leverage Object.assign() to "mix in" properties and methods from a number of objects into a composite object.
+
+Functional Mixins
+
+QUIZ QUESTION
+What is true about factory functions or mixins? Select all that apply:
+Answers:
+Just like a constructor function, a factory function can be called multiple times to create an object

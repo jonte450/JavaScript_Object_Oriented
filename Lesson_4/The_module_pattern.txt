@@ -1,0 +1,54 @@
+QUESTION 1 OF 3
+
+Before we jump into how the Module Pattern leverages scope and closures, let's make sure we're on the same page regarding scope. Consider the following:
+
+const myName = 'Richard';
+
+function introduceMyself() {
+  const you = 'student';
+
+  function introduce(message) {
+    // Which variables can be used here?
+  }
+
+  return introduce('Hello');
+}
+Which variables does the nested introduce() function have access to? Select all that apply:
+Answers:
+myName ,you ,message.
+
+QUESTION 2 OF 3
+
+Consider the following:
+
+let sodiumChloride = (function(){
+  let chemicalFormula = 'NaCl';
+  let molarMass = 58.44;
+
+  return {
+    getProperties: function(){
+      console.log(`Formula: ${chemicalFormula}`);
+      console.log(`Molar Mass: ${molarMass} g/mol`);
+    }
+  };
+})();
+
+When sodiumChloride.getProperties(); is executed, what is logged to the console?
+Answers:
+Two strings: 'Formula: NaCl' and 'Molar Mass: 58.44 g/mol'
+
+QUESTION 3 OF 3
+
+What is true about the Module Pattern? Select all that apply:
+
+Answers:
+The Module Pattern uses closures to create private properties.
+The Module Pattern requires the use of IIFE's.
+Unlike calling a constructor function, implementing the Module Pattern returns just one version of an object.
+
+				The Revealing Module Pattern
+QUIZ QUESTION
+
+Which concepts make up the Revealing Module Pattern? Select all that apply:
+Answers:
+IIFE ,Local variables/functions ,Returned object literal with keys that point to data intended to be revealed
